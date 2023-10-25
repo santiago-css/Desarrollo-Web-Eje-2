@@ -1,0 +1,27 @@
+@api = http://localhost:4000
+
+GET {{api}}/videos
+
+### 
+GET {{api}}/videos/65387157eac86fefd1d51c2d
+
+###
+POST {{api}}/videos
+Content-Type: application/json
+
+{
+    "url": "https://www.youtube.com/watch?v=K74IEHh635Y",
+    "title": "Te lo resumo",
+    "description": "this is a videoa"
+}
+
+###
+DELETE {{api}}/videos/6538774f293bf015fef1e8a6
+
+###
+PUT {{api}}/videos/65387befc99d0dea7f3d3305
+Content-Type: application/json
+
+{
+    "title": "Actualizacion"
+}
